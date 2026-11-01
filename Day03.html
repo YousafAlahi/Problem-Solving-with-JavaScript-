@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 3/21 of Problem Solving with JavaScript 🚀</title>
+</head>
+<body>
+    <h1>Day 3/21 of Problem Solving with JavaScript 🚀</h1>
+</body>
+<script>
+
+                                                    // =====;;;  Problem ====>>>>> 1 ;;;;;
+
+// 1. Print Right-Angled Star Triangle
+
+
+    // // let rows = 5 ;
+    // let rows = 8 ;
+
+    // for(let i = 1; i <= rows; i++){
+
+    //     // console.log("*",i);
+
+    //     let str = '';
+    //     for( let j = 1; j <= i; j++){
+    //         str = str + '*';
+    //     }
+    //     console.log(str);
+    // }
+
+
+                                                    // =====;;;  Problem ====>>>>> 2 ;;;;;
+
+// 2. Print Inverted Right-Angled Triangle ;;;;
+
+    // let rows = 5 ;
+    // // let rows = 8 ;
+
+    // for(let i = rows; i >= 1; i--){
+
+    //     // console.log("*",i);
+
+    //     let str = '';
+    //     for( let j = i; j >= 1; j--){
+    //         str = str + '*';
+    //     }
+    //     console.log(str);
+    // }
+
+
+                                                // =====;;;  Problem ====>>>>> 3 ;;;;;
+
+// 3.Print Pyramid Pattern ;;;;
+
+
+    // let rows = 5 ;
+   
+
+    // for(let i = 1; i <= 2* rows -1 ; i+= 2){
+
+    //     let str = '';
+
+    //     // console.log("*",i);
+    //     // console.log(i)
+    //     // console.log((i + 1) / 2); 
+    //     const currentRow = (i + 1) / 2;
+
+
+    //     for( let j = 1; j <= rows + currentRow - 1 ; j++){
+
+    //         if( j <= rows - currentRow){
+    //             str += ' ';
+    //         } else {
+    //             str += '*'
+    //             // str = str + '*';
+    //         }
+            
+    //     }
+    //      console.log(str);
+    // }
+
+
+
+                                                    // =====;;;  Problem ====>>>>> 4 ;;;;;
+
+// 4. Print Inverted Pyramid Pattern ;;;;
+
+    // let rows = 5 ;
+   
+
+    // for(let i = 2* rows -1 ; i >= 1 ; i-= 2){
+
+    //     let str = '';
+
+    //     // console.log("*",i);
+    //     // console.log(i)
+    //     // console.log((i + 1) / 2); 
+    //     const currentRow = (i + 1) / 2;
+
+
+    //     for( let j = 1; j <= rows + currentRow - 1 ; j++){
+
+    //         if( j <= rows - currentRow){
+    //             str += ' ';
+    //         } else {
+    //             str += '*'
+    //             // str = str + '*';
+    //         }
+            
+    //     }
+    //      console.log(str);
+    // }
+
+
+
+
+
+                                                    // =====;;;  Problem ====>>>>> 5 ;;;;;
+
+// 5. Print Hollow Square Pattern ;;;;
+
+// let row = 4;
+
+// for (let i = 1; i <= row; i++) {
+//     let str = '';
+
+//     for (let j = 1; j <= row; j++) {
+//         if (i === 1 || i === row || j === 1 || j === row) {
+//             str = str + '*';
+//         } else {
+//             str = str + ' ';
+//         }
+//     }
+//     console.log(str);
+// }
+
+// // 6. Print Hollow Pyramid Pattern
+
+// const row = 5
+
+// for(let i = 1; i <= 2*row - 1; i+=2) {
+//     let str = ''
+//     const currentRow = (i + 1) / 2
+
+//     for(let j = 1; j <= row + currentRow - 1; j++) {
+//         if(j <= row - currentRow || j > row - currentRow + 1 && j < row + currentRow - 1 && i !== 2*row - 1) {
+//             str += ' '
+//         } else  {
+//             str += '*'
+//         }
+//     }
+
+//     console.log(str);
+// }
+
+// 7. Print Alternating Binary Triangle
+
+
+const row = 5
+
+for(let i = 1; i <=row; i++) {
+    let str = ''
+
+    for(let j = 1; j <= i; j++) {
+        str = str + (i % 2 === 1 ? j % 2 : (j + 1) % 2) 
+    }
+    console.log(str);
+}
+
+
+
+
+</script>
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JavaScript Logic Interview Questions </title>
+</head>
+<body>
+    <h1>JavaScript Logic Interview Questions – Solutions & Explanations </h1>
+    <p>
+       
+javascript-master/
+│
+├── 01-variables/
+│   ├── theory.md
+│   └── problems.js
+│
+├── 02-datatypes/
+│   ├── theory.md
+│   └── problems.js
+│
+├── 03-operators/
+│   ├── theory.md
+│   └── problems.js
+│
+├── 04-conditions/
+│   ├── theory.md
+│   └── problems.js
+│
+├── 05-loops/
+│   ├── theory.md
+│   └── problems.js
+│
+├── 06-functions/
+│   ├── theory.md
+│   └── problems.js
+│
+├── 07-arrays/
+│   ├── theory.md
+│   └── problems.js
+│
+├── 08-objects/
+│   ├── theory.md
+│   └── problems.js
+│
+├── 09-strings/
+│   ├── theory.md
+│   └── problems.js
+│
+├── 10-dom/
+│   ├── theory.md
+│   └── problems.js
+│
+└── README.md
+
+javascript-master/
+│
+├── 11-es6-features/
+│   ├── theory.md
+│   └── problems.js
+│
+├── 12-scope-closures/
+│   ├── theory.md
+│   └── problems.js
+│
+├── 13-hoisting/
+│   ├── theory.md
+│   └── problems.js
+│
+├── 14-this-keyword/
+│   ├── theory.md
+│   └── problems.js
+│
+├── 15-callbacks-promises/
+│   ├── theory.md
+│   └── problems.js
+│
+├── 16-async-await/
+│   ├── theory.md
+│   └── problems.js
+│
+├── 17-error-handling/
+│   ├── theory.md
+│   └── problems.js
+│
+├── 18-event-loop/
+│   ├── theory.md
+│   └── problems.js
+│
+├── 19-oop/
+│   ├── theory.md
+│   └── problems.js
+│
+├── 20-modules-import-export/
+│   ├── theory.md
+│   └── problems.js
+│
+├── 21-memory-management/
+│   ├── theory.md
+│   └── problems.js
+│
+├── 22-debounce-throttle/
+│   ├── theory.md
+│   └── problems.js
+│
+├── 23-map-set-weakmap/
+│   ├── theory.md
+│   └── problems.js
+│
+├── 24-browser-storage/
+│   ├── theory.md
+│   └── problems.js
+│
+├── 25-design-patterns/
+│   ├── theory.md
+│   └── problems.js
+
+
+    </p>
+</body>
+<script>
+
+    // Q1 =====>>> Reverse a string (without built-in reverse/split)
+    // Problem: Given a string, return a new string with characters in reverse order.
+
+
+// function reverseString(str){
+//     let result = '';
+
+//     for(let i = str.length -1; i >= 0 ; i--){
+//        result = result + str[i] 
+//     }
+//     return result;
+// }
+
+// console.log(reverseString("Hello World!"));
+
+// Q2. Count words in a sentence (without split)
+
+// Q3. ======>>>> Remove duplicates from an array (no Set/filter)
+
+
+// function removeDuplicates(arr){
+//     let result = [];
+//     let resultIndex = 0;
+
+//     for(let i = 0; i < arr.length; i++){
+//         let current = arr[i];
+//         let alreadyExists = false;
+
+//      for(let j = 0;  j < resultIndex; j++){
+//             if(result[j] === current){
+//                 alreadyExists = true;
+//                 break;
+//                                  }
+//         }
+
+//         if(!alreadyExists){
+//             result[resultIndex] = current;
+//             resultIndex++;
+//         }
+//     }
+//     return result;
+// }
+
+// console.log(removeDuplicates([1,2,3,4,4,5,5,6,6,6,7,6,6]));
+
+//  Q4. ======>>>>  Separate even and odd numbers ;;;;;;;;
+// Give an array fo Numbers, create two arrays, one with even numbers and one with odd numbers
+
+
+
+
+
+
+// function splitEvenOdd(arr){
+//     let evens = [];
+//     let odds = [];
+//     let eIndex = 0;
+//     let oIndex = 0;
+
+//     for(let i =0; i < arr.length; i++){
+//         const num = arr[i];
+
+//         if(num % 2 === 0){
+//             evens[eIndex] = num;
+//             eIndex++;
+//         }else{
+//             odds[oIndex] = num;
+//             oIndex++;
+//         }
+//     }
+//      return {evens, odds};
+// }
+
+// const result = splitEvenOdd([1,2,3,4,5,6,7,8]);
+
+// console.log(result.evens);
+// console.log(result.odds);
+
+
+
+// Explanation (simple);;;
+// Har number par modulo operator (% 2) lagate hain. Agar remainder 0 ho to even hai, warna odd. Even ko evens array me, odd ko odds array me dalte hain, indexes manually track karte hue.
+
+
+// Q5  ====>>> Find largest number in an array (no Math.max) ;;;;;;;;;;
+//  Given an array of numbers return the maximum value without using Math.max 
+
+
+// function findMax(arr){
+//     let max = arr[0];
+
+//     for(let i = 1; i < arr.length; i++){
+//         if(max < arr[i]){
+//             max = arr[i]
+//         }
+//     }
+
+//     return max;
+// }
+
+// console.log(findMax([2,7,4,5,3]));
+
+// 
+// Explanation (simple):
+// Pehla element max maan lete hain. Phir loop se har element compare karte hain. Jo bhi max se bada mile, usko new max bana dete hain. End me max me largest value hoti hai.
+
+
+// Q6. ======>>>> Find smallest number in an array (no Math.min) ;;;;;;
+// Given an array of numbers return the minimum value without using Math.max
+
+
+// function findMin(arr){
+//     let min = arr[0];
+
+//     for(let i = 1; i < arr.length; i++){
+//         if(min > arr[i]){
+//             min = arr[i];
+//         }
+//     }
+//     return min;
+
+// }
+
+// console.log(findMin([2,3,1,0,8]));
+
+//  Explanation (simple):
+// Logic bilkul max jaisa hai, bas comparison ulta hai. Agar koi element current min se chhota mile to usko new min bana dete hain.
+
+//Q7. =====>>> Reverse an array (no built-in reverse) ;;;;;
+// Problem: Given an array, return a new array with elements in reverse order.
+
+    // function reverseArr(arr){
+    //     let result = [];
+    //     let index = 0;
+
+    //     for(let i = arr.length -1; i >= 0; i--){
+    //         result[index] = arr[i];
+    //         index++
+    //     }
+
+    //     return result;
+
+    // }
+
+    // console.log(reverseArr([1,2,3,4]));
+
+ 
+// Explanation (simple):
+// Array ke last index se start karte hain aur ek new result array me values copy karte hain. Is se order ulta ho jata hai bina built-in reverse ke.
+
+// Q8. Count vowels in a string
+// Given a string count how many vowels(a,e,i,o,u) it has;;;;;
+
+// Solution (JavaScript):
+
+// function countVowels(str) {
+//   let count = 0;
+//   const vowels = "aeiouAEIOU";
+
+//   for (let i = 0; i < str.length; i++) {
+//     const ch = str[i];
+//     for (let j = 0; j < vowels.length; j++) {
+//       if (ch === vowels[j]) {
+//         count++;
+//         break;
+//       }
+//     }
+//   }
+
+//   return count;
+// }
+
+// Example
+// console.log(countVowels("My name is Shahzaib")); 
+// // vowel count
+
+// Explanation (simple):
+// Har character ke liye hum vowels ki string me check karte hain ke match hota hai ya nahi. Agar match mil jaye to count++ kar dete hain. Yahan bhi simple nested loop use kia.
+// Q9. Check if a string is a palindrome
+// Problem: Return true if the string reads the same forward and backward.
+
+// Solution (JavaScript):
+
+// function isPalindrome(str) {
+//   let left = 0;
+//   let right = str.length - 1;
+
+//   while (left < right) {
+//     if (str[left] !== str[right]) {
+//       return false;
+//     }
+//     left++;
+//     right--;
+//   }
+
+//   return true;
+// }
+
+// // Example
+// console.log(isPalindrome("level")); 
+//   // true
+// console.log(isPalindrome("hello"));
+//    // false
+// Explanation (simple):
+// Hum do pointers use karte hain: left start se, right end se. Jab tak left < right hai,
+//  dono characters compare karte hain. Agar kabhi mismatch mila to false, warna loop ke baad true.
+
+
+</script>
+</html>
